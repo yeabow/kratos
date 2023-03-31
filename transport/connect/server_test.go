@@ -88,7 +88,7 @@ func TestServer(t *testing.T) {
 		}),
 		Options(grpc.InitialConnWindowSize(0)),
 	)
-	pb.RegisterGreeterServer(srv, &server{})
+	//pb.RegisterGreeterServer(srv, &server{})
 
 	if e, err := srv.Endpoint(); err != nil || e == nil || strings.HasSuffix(e.Host, ":0") {
 		t.Fatal(e, err)
