@@ -3,13 +3,13 @@ package errors
 import (
 	"errors"
 	"fmt"
+	"google.golang.org/grpc/interop/grpc_testing"
 	"net/http"
 	"reflect"
 	"testing"
 
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/test/grpc_testing"
 )
 
 type TestError struct{ message string }
